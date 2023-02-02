@@ -1,0 +1,81 @@
+<odoo>
+	<data>
+
+		<record id="register_material_list" model="ir.actions.act_window">
+			<field name="name">Register Material</field>
+			<field name="res_model">reg.material</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a Register
+              </p>
+				<p>klik tombol create Register</p>
+			</field>
+		</record>
+
+		<record id="tipe_material_list" model="ir.actions.act_window">
+			<field name="name">Tipe Material</field>
+			<field name="res_model">tipe.material</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a Tipe Material
+              </p>
+				<p>klik tombol create add Tipe Material</p>
+			</field>
+		</record>
+
+		<record id="supplier_material_list" model="ir.actions.act_window">
+			<field name="name">Supplier Material</field>
+			<field name="res_model">supplier.material</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a Supplier Material
+              </p>
+				<p>klik tombol create add Supplier Material</p>
+			</field>
+		</record>
+		
+
+		<menuitem id="register_0"
+				  name="Register Material"
+				  sequence="20"/>
+
+		<menuitem id="register_1"
+				  name="Register"
+				  parent="register_0"
+				  sequence="20"/>
+
+		<menuitem id="register_material"
+				  name="Material"
+				  parent="register_1"
+				  action="register_material_list"
+				  sequence="20"/>
+
+		<menuitem id="tipe_material_1"
+				  name="Tipe Material"
+				  parent="register_0"
+				  sequence="20"/>
+
+		<menuitem id="tipe_material"
+				  name="Tipe Material"
+				  parent="tipe_material_1"
+				  action="tipe_material_list"
+				  sequence="20"/>
+
+		<menuitem id="supplier_material_1"
+				  name="Supplier Material"
+				  parent="register_0"
+				  sequence="20"/>
+
+		<menuitem id="supplier_material"
+				  name="Supplier"
+				  parent="supplier_material_1"
+				  action="supplier_material_list"
+				  sequence="20"/>
+
+	
+
+	</data>
+</odoo>

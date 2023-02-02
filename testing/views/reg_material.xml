@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_reg_material_tree" model="ir.ui.view">
+            <field name="name">reg.material.tree</field>
+            <field name="model">reg.material</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Registrasi Material">
+                    <field name="material_code"/>
+                    <field name="material_name"/>
+                    <field name="tipe_material_id"/>
+                    <field name="material_buy_price"/>
+                    <field name="related_supplier_id"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="view_reg_material_form" model="ir.ui.view">
+            <field name="name">reg.material.form</field>
+            <field name="model">reg.material</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Registrasi Material Form">
+
+                    <sheet>
+                        
+                        <group>
+                            <field name="material_code"/>
+                            <field name="material_name"/>
+                            <field name="tipe_material_id"/>
+                             <field name="material_buy_price"/>
+                            <field name="related_supplier_id"/>
+                        </group>
+
+                       
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+    </data>
+</openerp>

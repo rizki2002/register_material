@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_supplier_material_tree" model="ir.ui.view">
+            <field name="name">supplier.material.tree</field>
+            <field name="model">supplier.material</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Supplier Material Form">
+                    <field name="name"/>
+                    <field name="keterangan"/>
+                   
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="view_supplier_material_form" model="ir.ui.view">
+           <field name="name">supplier.material.form</field>
+            <field name="model">supplier.material</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Supplier Material Form">
+
+                    <sheet>
+                        
+                        <group>
+                            <field name="name"/>
+                            <field name="keterangan"/>
+                        </group>
+
+                       
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+    </data>
+</openerp>
